@@ -1,14 +1,12 @@
 import React from 'react';
+import style from './botao.module.scss';
 
 class Botao extends React.Component<any>  { 
 
     render() { 
-        const isActive = false;
-        const style = {
-            backgroundColor: isActive ? 'green' : 'blue' 
-        }
+       
         return (
-            <button style={ style }>
+            <button className={style.botao}>
                 {this.props.children}
             </button>
         )
